@@ -11,8 +11,8 @@ class Enemy extends Soldier {
         soldierBox.innerHTML = `
         <img src=${this.image} alt="soldier">
         <div class='details'>
-        <h4><img src="/public/images/resources/crossed-swords.png" alt="crossed swords"/>: ${this.atk}</h4>
-        <h4><img src="/public/images/resources/shield.png" alt="shield">: ${this.def}</h4>
+        <h4><img src="./public/images/resources/crossed-swords.png" alt="crossed swords"/>: ${this.atk}</h4>
+        <h4><img src="./public/images/resources/shield.png" alt="shield">: ${this.def}</h4>
         </div>
         <progress value="${this.hp}" max="${this.maxHp}"></progress>
         `
