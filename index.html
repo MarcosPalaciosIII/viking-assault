@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikings Assault</title>
+    <link rel="stylesheet" href="public/styles/style.css">
+</head>
+<body>
+    <h1>Vikings Assault</h1>
+    <div id='game-data'>
+        <div id="player-data">
+            <h2>Player Army</h2>
+            <div>
+                <h3 class="team-coin"><img src="/public/images/resources/coin.png" alt="coin"> <span>0</span></h3>
+                <h3 class="team-size"><img src="/public/images/resources/team.png" alt="team"> <span>0</span>/15</h3>
+            </div>
+        </div>
+        <button id="start-game">Start Game</button>
+        <h3 id="player-turn" class='hide'><span></span> Turn</h3>
+        <div id="ai-data">
+            <h2>Enemy Army</h2>
+            <div>
+                <h3 class="team-coin"><img src="/public/images/resources/coin.png" alt="coin"> <span>0</span></h3>
+                <h3 class="team-size"><img src="/public/images/resources/team.png" alt="team"> <span>0</span>/15</h3>
+            </div>
+        </div>
+    </div>
+    <div id="game-board">
+        <div id="viking-army">
+            
+        </div>
+        <div id="center-display" class="hide">
+            <h4>Let the battle Commense!</h4>
+            <div id='action-buttons' class='hide'>
+                <button id="attack-button">Attack $+2</button>
+                <button id="buy-soldier-button">Buy Soldier $-25</button>
+                <button id="buy-hero-button">Buy Hero $-50</button>
+            </div>
+        </div>
+        <div id="enemy-army">
+            
+        </div>
+    </div>
+
+    <script src="public/data/vikingNames.js"></script>
+    <script src="public/scripts/soldier.js"></script>
+    <script src="public/scripts/viking.js"></script>
+    <script src="public/scripts/enemy.js"></script>
+    <script src="public/scripts/player.js"></script>
+    <script src="public/scripts/game.js"></script>
+    <script src="public/scripts/index.js"></script>
+</body>
+</html>
