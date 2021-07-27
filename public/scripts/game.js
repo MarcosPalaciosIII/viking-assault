@@ -89,10 +89,10 @@ class Game {
         const random = Math.floor(Math.random() * 6);
         const randomHero = Math.floor(Math.random() * 6);
         setTimeout(() => {
-            if (this.ai.coin >= 25 && random % 2 === 0) {
-                this.buySoldier(false);
-            } else if (this.ai.coin >= 25 && random % 4 === 0) {
+            if (this.ai.coin >= 50 && random % 4 === 0) {
                 this.buySoldier(true)
+            } else if (this.ai.coin >= 25 && random % 2 === 0) {
+                this.buySoldier(false);
             } else {
                 this.attack();
             }
